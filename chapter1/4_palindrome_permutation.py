@@ -9,7 +9,7 @@ def is_palindrome_permutation(str):
         # check if character is a letter
         val = ord(char.lower()) - ord('a')
         if ord('a') <= val <= ord('z'):
-            char_counts[val]
+            char_counts[val] += 1
             if char_counts[val] % 2:
                 odd_count += 1
             else:
